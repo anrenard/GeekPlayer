@@ -23,7 +23,10 @@
 }
 
 .dwn{
-    margin-top: 52px;
+    margin-top: 45px;
     margin-bottom: 45px;
+}
+.rgt{
+    float: right;
 }
 
