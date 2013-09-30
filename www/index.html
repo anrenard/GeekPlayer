@@ -3,29 +3,43 @@
 <head>
 <meta charset="utf-8">
 <title>Ember Starter Kit</title>
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <script type="text/x-handlebars">
-    <h2>Welcome to Ember.js</h2>
+  <div class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand blink"><span class="glyphicon glyphicon-flash"></span> GeekPlayer</a>
+      </div>
+      <div class="navbar-collapse collapse">
+      </div><!--/.navbar-collapse -->
+    </div>
+  </div>
 
-    {{outlet}}
-  </script>
+  <div class="navbar navbar-fixed-bottom">
+    <div class="navbar-header">
+      <div class="btn-group btn-group-lg btn-group-justified">
+        <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-home"></span></a>
+        <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-refresh"></span></a>
+        <a href="#" class="btn btn-default" ><span class="glyphicon glyphicon-info-sign"></span></a>
+        <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-heart"></span></a>
+      </div>
+    </div>
+  </div>
 
-  <script type="text/x-handlebars" data-template-name="index">
-    <ul>
-    {{#each item in model}}
-      <li>{{item}}</li>
-    {{/each}}
-    </ul>
-  </script>
-
-  <script src="js/libs/jquery-1.9.1.js"></script>
-  <script src="js/libs/handlebars-1.0.0.js"></script>
-  <script src="js/libs/ember-1.0.0.js"></script>
+  
+  <script src="js/libs/bootstrap.min.js"></script>
+  <script src="js/libs/ember-data.js"></script>
+  <script src="js/libs/ember.js"></script>
+  <script src="js/libs/handlebars.js"></script>
+  <script src="js/libs/jquery.js"></script>
+  <script src="js/libs/moment.js"></script>
   <script src="js/app.js"></script>
 
 </body>
+
 </html>
