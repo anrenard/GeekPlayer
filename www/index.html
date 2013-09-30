@@ -6,6 +6,11 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <script>
+      audiojs.events.ready(function() {
+        audiojs.createAll();
+      });
+    </script>
 </head>
 <body>
 
@@ -48,10 +53,7 @@
 
   <div class='info'>
     <h1>player</h1>
-    <audio controls>
-      
-      <source src="http://c2ol.fr/playergeek/musiques/Dj%20blue%20feat%20paille%20&%20lieutenant%20-%20fast%20style.mp3" type="audio/mpeg" />
-    </audio>
+    <audio src="http://s3.amazonaws.com/audiojs/02-juicy-r.mp3" preload="auto"></audio>
     
   </div>
 
