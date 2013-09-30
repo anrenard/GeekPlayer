@@ -27,3 +27,5 @@
     margin-bottom: 45px;
 }
 
+li { cursor: pointer; }
+li.current { font-weight: bold };

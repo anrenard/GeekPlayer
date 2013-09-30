@@ -6,11 +6,21 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <script>
-      audiojs.events.ready(function() {
-        audiojs.createAll();
-      });
-    </script>
+  <script type="text/javascript">
+      var audio    = new Audio();
+        playlist = $('.list-group');
+
+                   playlist.on('click', 'li', function() {
+                      playlist.find('.current').removeClass('current');
+                      $(this).addClass('current');
+                      audio.src = $(this).data('src');
+                      audio.play();
+                   }).find('li:first').trigger('click');
+           
+    audio.controls = true;
+    document.body.appendChild(audio);
+
+  </script>
 </head>
 <body>
 
@@ -53,7 +63,6 @@
 
   <div class='info'>
     <h1>player</h1>
-    <audio src="http://s3.amazonaws.com/audiojs/02-juicy-r.mp3" preload="auto"></audio>
     
   </div>
 
@@ -92,9 +101,11 @@ if (settings.core.rate_app_counter === 1) {
 
 <script type="text/x-handlebars" id="index">
 
-  <div class="list-group dwn">
-  <a href="#" class="list-group-item">Vestibulum at eros</a>
-</div>
+  <div class="list-group dwn" id="playlist">
+    <li class="list-group-item" data-src="http://dp0169.free.fr/Musique/Air/Air%20-%20Talkie%20Walkie/02%20Cherry%20Blossom%20Girl.mp3">Cherry Blossom Girl (AIR)</li>
+    <li class="list-group-item" data-src="http://dp0169.free.fr/Musique/Air/Air%20-%20Talkie%20Walkie/04%20Universal%20Traveller.mp3">Universal Traveller (AIR)</li>
+    <li class="list-group-item" data-src="">Another Day (AIR)</li>
+  </div>
 
 </script>
 
