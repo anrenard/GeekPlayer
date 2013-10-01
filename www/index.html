@@ -38,6 +38,28 @@
 
   <div class='info'>
     <h1>informations</h1>
+
+    <!-- Button trigger modal -->
+  <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Launch demo modal</a>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
     
   </div>
 
@@ -46,7 +68,7 @@
 <script type="text/x-handlebars" id="index">
 
   <div class="list-group dwn">
-       {{#linkTo 'player' class="list-group-item"}}Dj blue feat paille Lieutenant fast style{{/linkTo}}   
+       {{#linkTo 'player' class="list-group-item"}}Dj blue feat paille Lieutenant fast style{{/linkTo}}
   </div>
 
 </script>
@@ -54,23 +76,20 @@
 <script type="text/x-handlebars" id="player">
 
     <div class='music'>
-
-
-      <a href="#" class="list-group-item">Dj blue feat paille Lieutenant fast style</a>
+      <audio id="player" src="http://c2ol.fr/playergeek/musiques/Dj%20blue%20feat%20paille%20&%20lieutenant%20-%20fast%20style.mp3" type="audio/mp3" controls="controls"></audio>  
       <br>
-      <span class="label label-info">Fiche</span>
+      <span class="label label-warning">Fiche</span>
       <br>
       <span class="label label-success">Titre :</span><span class="label label-default">Dj blue feat paille Lieutenant fast style</span>
       <br>
       <span class="label label-success">Artistes :</span><span class="label label-default">Paille & Lieutenant</span>
       <br>
-      <span class="label label-success">Album :</span><span class="label label-default">Mixup 1999</span>
+      <span class="label label-success">Album :</span><span class="label label-default">2005</span>
       <br>
       <span class="label label-success">Temps :</span><span class="label label-default">2.00 min</span>
+      <br>
+      <span class="label label-success">Description :</span><span class="label label-default">Mega mix des années 2000 avec paille et lieutenant, deux grosses pointures du dancehall martiniquais</span>
       <hr>
-      <span class="label label-warning">player :</span>
-      <audio id="player2" src="http://c2ol.fr/playergeek/musiques/Dj%20blue%20feat%20paille%20&%20lieutenant%20-%20fast%20style.mp3" type="audio/mp3" controls="controls">    
-    </audio>  
   </div>
     
   </div>
