@@ -26,3 +26,12 @@
     margin-top: 45px;
     margin-bottom: 45px;
 }
+
+.music{
+    margin-top: 53px;
+}
+
+audio{
+    width: 100%;
+    background: black;
+}

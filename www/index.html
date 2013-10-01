@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mediaelementplayer.min.css">
 </head>
 <body>
 
@@ -46,8 +47,9 @@
 
 <script type="text/x-handlebars" id="player">
 
-  <div class='info'>
-    <h1>player</h1>
+  <div class='music'>
+    <audio id="player2" src="http://c2ol.fr/playergeek/musiques/Dj%20blue%20feat%20paille%20&%20lieutenant%20-%20fast%20style.mp3" type="audio/mp3" controls="controls">    
+    </audio>  
     
   </div>
 
@@ -57,18 +59,23 @@
 <script type="text/x-handlebars" id="index">
 
   <div class="list-group dwn">
-  <a href="#" class="list-group-item">Vestibulum at eros</a>
-</div>
+    <a href="#" class="list-group-item">Vestibulum at eros</a>
+  </div>
 
 </script>
-
+  
   <script src="js/libs/jquery.js"></script>
+  <script src="js/mediaelement-and-player.min.js"></script>
   <script src="js/libs/handlebars.js"></script>
   <script src="js/libs/ember.js"></script>
   <script src="js/libs/ember-data.js"></script>
   <script src="js/libs/bootstrap.min.js"></script>
   <script src="js/libs/moment.js"></script>
   <script src="js/app.js"></script>
+
+  <script>
+    $('audio,video').mediaelementplayer();
+  </script>
 
 </body>
 
